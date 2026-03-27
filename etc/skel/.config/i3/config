@@ -591,12 +591,12 @@ strip_workspace_numbers yes
 
 ## rofi bindings fancy application menu
 
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun \
+bindsym $mod+d exec --no-startup-id rofi -dpi 0 -modi drun -show drun \
         -config ~/.config/rofi/rofidmenu.rasi
 
 ## rofi bindings for window menu
 
-bindsym $mod+t exec --no-startup-id rofi -show window \
+bindsym $mod+t exec --no-startup-id rofi -dpi 0 -show window \
         -config ~/.config/rofi/rofidmenu.rasi
 
 ## rofi bindings to manage clipboard (install rofi-greenclip from the AUR)
