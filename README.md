@@ -11,6 +11,13 @@
 * You can find some details about enhancements and changes on my blog
   [kamprad.net](https://kamprad.net/index.php/endeavouros-i3wm-setup)
 
+### With the EOS Installer
+
+1. In the live environment, choose "Fetch your install customization file" from the Welcome app.
+2. Type or paste the URL for the i3 user_commands.bash file.
+```
+https://raw.githubusercontent.com/long9657/endeavouros-i3wm-setup/main/i3_install_isomode.bash
+```
 ## Settings Tutorial
 
 Default applications
