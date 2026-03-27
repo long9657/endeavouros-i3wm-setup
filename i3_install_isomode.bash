@@ -4,7 +4,7 @@ username="$1"
 git clone https://github.com/long9657/endeavouros-i3wm-setup.git
 cd endeavouros-i3wm-setup/etc/skel/
 cp -R .config .local .icons /home/$username/
-cp .Xresources .gtkrc-2.0 .profile set_once.sh xed.dconf /home/$username/
+cp .Xresources .xprofile .gtkrc-2.0 .profile set_once.sh xed.dconf /home/$username/
 cd /
 rm -rf endeavouros-i3wm-setup
 chown -R $username:$username /home/$username
