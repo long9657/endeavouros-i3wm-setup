@@ -203,7 +203,7 @@ exec --no-startup-id xss-lock -l ~/.config/i3/scripts/blur-lock
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+BackSpace restart
 
 # keybinding in fancy rofi (automated):
 bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
@@ -320,8 +320,7 @@ bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-
 # the currently focused window
 bindsym $mod+Print exec --no-startup-id scrot -u ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 # select a window or rectangle with the mouse
-bindsym $mod+Shift+Print exec --no-startup-id scrot -s ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
-
+bindsym $mod+Shift+r exec --no-startup-id scrot -s ~/%Y-%m-%d-%T-screenshot.png -e 'xclip -selection clipboard -t image/png -i $f && notify-send "Screenshot saved & copied" "$f"'
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
 
